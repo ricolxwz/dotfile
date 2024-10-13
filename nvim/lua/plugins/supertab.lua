@@ -15,8 +15,12 @@ return {
       local cmp = require("cmp")
       cmp.setup({
         window = {
-          documentation = cmp.config.window.bordered(),
-          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered({
+            winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:None,Search:None",
+          }),
+          completion = cmp.config.window.bordered({
+            winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:None,Search:None",
+          }),
         },
       })
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
