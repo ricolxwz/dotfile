@@ -14,6 +14,14 @@ return {
     opts = function(_, opts)
       local cmp = require("cmp")
       cmp.setup({
+        enabled = function()
+          local filetype = vim.bo.filetype
+          if filetype == "markdown" then
+            return false
+          else
+            return true
+          end
+        end,
         window = {
           documentation = cmp.config.window.bordered({
             winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:None,Search:None",
