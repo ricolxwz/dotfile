@@ -21,14 +21,13 @@ return {
           winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:None,Search:None",
         }),
       }
-      opts.enabled = function()
-        local filetype = vim.bo.filetype
-        if filetype == "python" then
-          return false
-        else
-          return true
-        end
-      end
+      opts.filetype = {
+        markdown = {
+          sources = cmp.config.sources({
+            { name = "luasnip" },
+          }),
+        },
+      }
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
           -- This little snippet will confirm with tab, and if no entry is selected, will confirm the first item
