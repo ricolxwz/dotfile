@@ -6,4 +6,5 @@ config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
+config.font_size = 16.0
 return config
