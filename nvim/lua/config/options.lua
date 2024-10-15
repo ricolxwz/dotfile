@@ -5,3 +5,5 @@
 vim.opt.cursorline = false
 vim.opt.pumblend = 0
 vim.opt.spelllang = { "en", "cjk" }
+vim.opt.breakat = ""
+vim.opt.list = false
