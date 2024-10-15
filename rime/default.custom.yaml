@@ -1,0 +1,24 @@
+patch:
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key:
+      Caps_Lock: noop
+      Control_L: noop
+      Control_R: noop
+      Eisu_toggle: noop
+      Shift_L: noop
+      Shift_R: noop
+  key_binder:
+    bindings:
+      - {accept: minus, send: Page_Up, when: has_menu}
+      - {accept: equal, send: Page_Down, when: has_menu}
+      - {accept: comma, send: Page_Up, when: paging}
+      - {accept: period, send: Page_Down, when: has_menu}
+      # - {accept: "Control+space", toggle: ascii_mode, when: always}
+  menu:
+    page_size: 8
+  schema_list:
+    - schema: luna_pinyin_simp
+  switcher:
+    hotkeys:
+      - "Control+grave"

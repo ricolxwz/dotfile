@@ -1,0 +1,47 @@
+patch:
+  translator/dictionary: extended
+  switches/@next:
+    name: emoji_suggestion
+    reset: 1
+    states: [ "🈚︎", "🈶️" ]
+  'engine/filters/@before 0':
+    simplifier@emoji_suggestion
+  "switches/@0/reset": 0
+  emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: none
+    inherit_comment: false
+  punctuator/half_shape:
+    "," : { commit: "," }
+    "." : { commit: "." }
+    "<" : "<"
+    ">" : ">"
+    "/" : "/"
+    "?" : { commit: "?" }
+    ";" : { commit: ";" }
+    ":" : { commit: ":" }
+    "'" : "'"
+    "\"" : "\""
+    "\\" : "\\"
+    "|" : "|"
+    "`" : "`"
+    "~" : "~"
+    "!" : { commit: "!" }
+    "@" : "@"
+    "#" : "#"
+    "%" : "%"
+    "$" : "$"
+    "^" : "^"
+    "&" : "&"
+    "*" : "*"
+    "(" : "("
+    ")" : ")"
+    "-" : "-"
+    "_" : "_"
+    "+" : "+"
+    "=" : "="
+    "[" : "["
+    "]" : "]"
+    "{" : "{"
+    "}" : "}"
