@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
-config.color_scheme = "Dracula"
+config.color_scheme = "tokyonight"
 config.font = wezterm.font("JetBrainsMono Nerd Font Mono")
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
