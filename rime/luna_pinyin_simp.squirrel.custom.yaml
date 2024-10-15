@@ -1,5 +1,5 @@
 patch:
-  "switches/@0/reset": 1
+  "switches/@0/reset": 0
   translator/dictionary: extended
   switches/@next:
     name: emoji_suggestion
