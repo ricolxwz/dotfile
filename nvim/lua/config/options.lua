@@ -7,3 +7,4 @@ vim.opt.pumblend = 0
 vim.opt.spelllang = { "en", "cjk" }
 vim.opt.breakat = ""
 vim.opt.list = false
+vim.opt.laststatus = 0

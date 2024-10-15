@@ -1,5 +1,6 @@
 return {
   "nvim-lualine/lualine.nvim",
+  enabled = false,
   event = "VeryLazy",
   config = function(_, opts)
     -- Custom theme configuration for lualine
