@@ -1,4 +1,5 @@
 patch:
+  "switches/@0/reset": 1
   translator/dictionary: extended
   switches/@next:
     name: emoji_suggestion
@@ -6,7 +7,6 @@ patch:
     states: [ "🈚︎", "🈶️" ]
   'engine/filters/@before 0':
     simplifier@emoji_suggestion
-  "switches/@0/reset": 0
   emoji_suggestion:
     opencc_config: emoji.json
     option_name: emoji_suggestion
@@ -45,3 +45,4 @@ patch:
     "]" : "]"
     "{" : "{"
     "}" : "}"
+
