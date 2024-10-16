@@ -1,17 +1,16 @@
 ---
 name: extended
 version: "2024-5-18"
-sort: by_weight
 import_tables:
   - dicts/8105
   - dicts/41448
   - dicts/base
   - dicts/ext
+  - dicts/tencent
   - dicts/others
+  - dicts/custom
   - dicts/sougou_coding
   - dicts/sougou_develop
   - dicts/sougou_network
   - dicts/sougou_computer
-  - dicts/tencent
-  - dicts/custom
 ...
