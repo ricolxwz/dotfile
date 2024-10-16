@@ -13,6 +13,5 @@ import_tables:
   - dicts/sougou_network
   - dicts/sougou_computer
   - dicts/tencent
-  - dicts/sougou_standard
   - dicts/custom
 ...
