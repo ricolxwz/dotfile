@@ -7,12 +7,19 @@ return {
     },
     opts = function(_, opts)
       local cmp = require("cmp")
+      -- file: lspconfig.lua
+      local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+      capabilities.textDocument.completion.completionItem.snippetSupport = false
       opts.snippet = {
         expand = function(args)
           require("luasnip").lsp_expand(args.body)
         end,
       }
-      table.insert(opts.sources, { name = "luasnip" })
+      opts.sources = cmp.config.sources({
+        { name = "nvim-lsp" },
+        { name = "luasnip" },
+        { name = "buffer" },
+      })
       opts.window = {
         documentation = cmp.config.window.bordered({
           winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:None,Search:None",
