@@ -8,14 +8,7 @@ return {
       {
         "rafamadriz/friendly-snippets",
         config = function()
-          vim.api.nvim_create_autocmd("FileType", {
-            pattern = "*",
-            callback = function()
-              if vim.bo.filetype ~= "markdown" then
-                require("luasnip.loaders.from_vscode").lazy_load()
-              end
-            end,
-          })
+          require("luasnip.loaders.from_vscode").lazy_load()
         end,
       },
     },

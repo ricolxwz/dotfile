@@ -18,7 +18,9 @@ return {
       opts.sources = cmp.config.sources({
         { name = "nvim-lsp" },
         { name = "luasnip" },
-        { name = "buffer" },
+        {
+          { name = "buffer" },
+        },
       })
       opts.window = {
         documentation = cmp.config.window.bordered({
@@ -29,7 +31,8 @@ return {
         }),
       }
       opts.filetype = {
-        markdown = {
+        "markdown",
+        {
           sources = cmp.config.sources({
             { name = "luasnip" },
           }),
