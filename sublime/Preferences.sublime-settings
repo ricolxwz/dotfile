@@ -1,0 +1,10 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+  "ignored_packages": [],
+  "caret_extra_bottom": 0,
+  "caret_extra_top": 0,
+  "caret_style": "smooth"
+  "font_face": "Mononoki Nerd Font Mono",
+  "font_size": 10
+}
