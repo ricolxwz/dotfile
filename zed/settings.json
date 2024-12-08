@@ -1,0 +1,25 @@
+{
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "never"
+  },
+  "project_panel": {
+    "dock": "right",
+    "git_status": true,
+    "button": true
+  },
+  "autosave": "on_focus_change",
+  "ui_font_size": 14,
+  "ui_font_family": "Mononoki Nerd Font Mono",
+  "ui_font_fallbacks": ["LXGWWenKai-Regular"],
+  "buffer_font_size": 14,
+  "buffer_font_family": "Mononoki Nerd Font Mono",
+  "buffer_font_fallbacks": ["LXGWWenKai-Regular"],
+  "theme": "Tokyo Night",
+  "languages": {
+    "Markdown": {
+      "soft_wrap": "editor_width"
+    }
+  }
+}
+

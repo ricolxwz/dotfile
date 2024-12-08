@@ -1,0 +1,10 @@
+{
+	"Insert Markdown": {
+		"prefix": "fig",
+			"body": [
+			"<figure markdown='1'>",
+			"![]($1){ loading=lazy width='300' }",
+			"</figure>"
+		]
+	}
+}
