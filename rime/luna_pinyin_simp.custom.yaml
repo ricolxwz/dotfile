@@ -1,7 +1,7 @@
 patch:
   "switches/@0/reset": 0
-  translator/dictionary: extended
-  switches/@next:
+  "translator/dictionary": extended
+  "switches/@next":
     name: emoji_suggestion
     reset: 1
     states: [ "🈚︎", "🈶️" ]
@@ -12,7 +12,7 @@ patch:
     option_name: emoji_suggestion
     tips: none
     inherit_comment: false
-  punctuator/half_shape:
+  "punctuator/half_shape":
     "," : { commit: "," }
     "." : { commit: "." }
     "<" : "<"
