@@ -3,8 +3,24 @@
 		"prefix": "fig",
 			"body": [
 			"<figure markdown='1'>",
-			"![]($1){ loading=lazy width='300' }",
+			"![]($1){ loading=lazy width='500' }",
 			"</figure>"
+		]
+	},
+	"Insert python input cell": {
+		"prefix": "cin",
+		"body": [
+			"```py title='输入'",
+			"$1",
+			"```"
+		]
+	},
+	"Insert output cell": {
+		"prefix": "cout",
+		"body": [
+			"``` title='输出'",
+			"$1",
+			"```"
 		]
 	}
 }
